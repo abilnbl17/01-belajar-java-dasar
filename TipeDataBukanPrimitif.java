@@ -63,6 +63,18 @@ public class TipeDataBukanPrimitif {
         // Dan ini konversi secara manual
         int iniInt = 100; // ini primitif
         Integer iniInteger2 = iniInt; // ini bukan primitif
+
+        // Dibawah ini akan melakukan sebuah Konversi Dari Tipe Primitif
+        int intInt2 = 200;
+
+        Integer iniObject = intInt2;
+
+        // dibawah ini ada sebuah variabel yang mempunya value ini object dan
+        // menggunakan method value dan setiap value memiliki semua tipedata primitif
+        short iniShort = iniObject.shortValue();
+        long iniLong2 = iniObject.longValue();
+        float iniFloat = iniObject.floatValue();
+        // Bisa digunakan dari yang bukan primitif ke primitif dengan method value
     }
 
 }
