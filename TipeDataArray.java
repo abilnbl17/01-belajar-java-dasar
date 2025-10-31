@@ -40,6 +40,8 @@
  * Jadi tidak ada penghapusan perihal array karna total array yang sudah dibuat
  * adalah sudah fix jadi hanya bisa menggantikannya dengan by defaultnya saja
  * Tidak bisa menghapus indexnya pada array
+ * 
+ * => ARRAY DI DALAM ARRAY
  */
 public class TipeDataArray {
     public static void main(String[] args) {
@@ -96,6 +98,23 @@ public class TipeDataArray {
         // Mengambil data variabel dari arrayLong
         System.out.println(arrayLong.length); // Mengambil panjang dari variable arrayLong
 
+        // Dibawah ini adalah array di dalam array
+        // Jika ada 2 kotak array pada membuat sebuah variabelnya maka itu disebut
+        // dengan array didalam array
+        String[][] members = {
+                { "Elman", "Thomas" },
+                { "Nabil", "James" },
+                { "Abil" }
+
+        };
+        // Dibawah ini akan mencetak sebuah data array yang sudah diinisialisasikan
+        // diatas
+        // dan juga ini pengambilannya seperti array pada javascript
+        // dan untuk mengaksesnya dengan cara menggunakan 2 kotak array juga jika 1 bisa
+        // akses datanya hanya saja tidak bisa menampilkan sebauh value pada data atau
+        // variable tersebut
+        System.out.println(members[0][1]);
+        System.out.println(members[1][1]);
     }
 
 }
